@@ -15,6 +15,8 @@ An app where users can leave reviews and ratings for businesses as well as creat
 ## Project Schedule
 
 | Day | Component |
+| --- | :---: |
+
 | 1 | Backend Models & Serializers |
 | 2 | Backend Urls |
 | 3 | Connect to Frontend and Implemnent GET functionality |
