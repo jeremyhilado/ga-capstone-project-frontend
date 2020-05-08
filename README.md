@@ -39,7 +39,7 @@ An app where users can leave reviews and ratings for businesses as well as creat
 [React Architecture](https://docs.google.com/drawings/d/1aX130-uJ-6ShuQmGKrcZvnOA0qXm3FfQT1NQWQHHr_Q/edit)
 
 ## Database Models
-
+```
 from django.db import models
 from apps.authentication.models import User
 
@@ -138,11 +138,11 @@ class BusinessAttributes(models.Model):
 
     def __str__(self):
         return self.name
-
+```
 ## MVP / PostMPVP
 
 MVP
- - Be able to add artist info to database, update artist info, create artist info, delete artist info
+ - Be able to add business info to database, update business info, create artist business listing, delete business listing
  
  PostMVP
  - Add artist to favorites list
