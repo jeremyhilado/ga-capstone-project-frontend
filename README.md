@@ -144,7 +144,7 @@ MVP
  - Be able to add business info to database, update business info, create artist business listing, delete business listing
  
  PostMVP
- - Add artist to favorites list
+ - Add business to favorites list
  - Add other users as friends
 
 ## Time / Priority Breakdown
