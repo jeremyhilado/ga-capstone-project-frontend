@@ -141,7 +141,8 @@ class BusinessAttributes(models.Model):
 ## MVP / PostMPVP
 
 MVP
- - Be able to add business info to database, update business info, create artist business listing, delete business listing
+ - Be able to add business info to database, update business info, create business listing, delete business listing
+ - Be able to create, update, and delete business reviews.
  
  PostMVP
  - Add business to favorites list
