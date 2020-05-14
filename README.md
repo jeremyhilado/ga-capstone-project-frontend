@@ -4,7 +4,7 @@ The Rundown
 
 ## Project Description
 
-An app where users can leave reviews and ratings for businesses as well as create business listings.
+An app where users can create business listings and leave reviews about their experiences with them giving all other users "the rundown" on what those businesses are all about.
 
 
 ## GitHub Repo Links
@@ -75,6 +75,8 @@ class Review(models.Model):
 
 ## MVP / PostMPVP
 
+I was able to fully complete my MVP but was not able to get to any PostMVP.
+
 MVP
  - Be able to add business info to database, update business info, create business listing, delete business listings.
  - Be able to create, update, and delete business reviews.
@@ -88,18 +90,16 @@ MVP
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Adding Login Form | H | 4 hrs | 1 hr | 1 hr |
-| Creating Backend | H | 4 hrs| 8 hrs | 8 hrs |
+| Creating Backend | H | 4 hrs| 12 hrs | 12 hrs |
 | Creating Register User Page | H | 4 hrs | 1 hr | 1 hr |
-| Creating Search Business Page | H | 4 hr | | |
-| Creating Search Results Page | H | 4 hrs | | 
-| Creating Update/Delete Review Page | H | 4 hrs | 5 hrs | 5 hrs |
-| Creating add Business Page | H | 4 hrs | | |
+| Implementing search | H | 4 hrs | 0 hrs | 0 hrs | 
+| Creating Update/Delete Review Page | H | 4 hrs | 9 hrs | 9 hrs |
+| Creating add Business Page | H | 4 hrs | 6 hrs | 6 hrs |
 | Testing | M | 5 hrs | 5 hrs | 5 hrs |
-| Adding Styling | M | 5 hrs | | |
-| Adding About Page | M | 2 hr | |
-| Deployment | H | 3hrs | 5 hrs | 5 hrs |
-| Implement Favorites list | L | 4 hrs | |
-| Total | | 47 hrs | | |
+| Adding Styling | M | 5 hrs | 2 hrs | 2 hrs |
+| Deployment | H | 3hrs | 10 hrs | 10 hrs |
+| Implement Favorites list | L | 4 hrs | 0 hrs | 0 hrs |
+| Total | | 43 hrs | 40 hrs | 40 hrs |
 
 ## Additional Libraries
 axios
@@ -107,8 +107,20 @@ bootstrap
 react-bootstrap
 react-router-dom
 
+## Screenshots
+![Home Page](https://res.cloudinary.com/do6tcpizk/image/upload/v1589497473/GA%20Project%204%20Capstone%20Yelp%20Clone/Screenshots/therundown.netlify.app__hlihhn.png)
+![Sign Up](https://res.cloudinary.com/do6tcpizk/image/upload/v1589497473/GA%20Project%204%20Capstone%20Yelp%20Clone/Screenshots/therundown.netlify.app__1_ufqh9p.png)
+![Log In](https://res.cloudinary.com/do6tcpizk/image/upload/v1589497473/GA%20Project%204%20Capstone%20Yelp%20Clone/Screenshots/therundown.netlify.app__2_e0fffp.png)
+![Dashboard](https://res.cloudinary.com/do6tcpizk/image/upload/v1589497473/GA%20Project%204%20Capstone%20Yelp%20Clone/Screenshots/therundown.netlify.app__3_xjr5my.png)
+![Business Page](https://res.cloudinary.com/do6tcpizk/image/upload/v1589497473/GA%20Project%204%20Capstone%20Yelp%20Clone/Screenshots/therundown.netlify.app_business_Cofax_20Coffee_20Shop_yhpzue.png)
+![Review Page](https://res.cloudinary.com/do6tcpizk/image/upload/v1589497473/GA%20Project%204%20Capstone%20Yelp%20Clone/Screenshots/therundown.netlify.app_business_Cofax_20Coffee_20Shop_1_sdqs7p.png)
+![Add Business](https://res.cloudinary.com/do6tcpizk/image/upload/v1589497473/GA%20Project%204%20Capstone%20Yelp%20Clone/Screenshots/therundown.netlify.app_business_Cofax_20Coffee_20Shop_2_r29u3v.png)
+
 
 ## Code Snippet
+
+I'm sharing the particular code snippent below because I thought it was a pretty clever way of getting the business id to the handle function so it can be stored in state. I set the value prop of the submit button to {business[0].id} so that when it was clicked it would get sent to the handleChange function and get stored into state.
+
 ```
 <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name="review" value={rundownContext.reviewInfo.review} onChange={rundownContext.handleReviewChange}></textarea>
                     </div>
